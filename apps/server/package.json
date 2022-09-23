@@ -14,7 +14,7 @@
   "devDependencies": {
     "@types/express": "^4.17.14",
     "@types/node": "^18.7.18",
-    "eslint-config-custom": "*",
+    "@monorepo/eslint-config": "*",
     "nodemon": "^2.0.20",
     "tsconfig": "*",
     "ts-node": "^10.9.1",

@@ -19,7 +19,6 @@ module.exports = {
     next: {
       rootDir: [
         'apps/next-app/',
-        'apps/next-next-app/',
         'packages/ui',
         'packages/eslint-config',
         'packages/tsconfig',

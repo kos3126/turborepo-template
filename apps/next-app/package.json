@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "next": "latest",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "server": "*",
     "@monorepo/ui": "*"
   },
@@ -20,7 +20,7 @@
     "@monorepo/tsconfig": "*",
     "@types/node": "^18.7.18",
     "@types/react": "^18.0.21",
-    "@types/react-dom": "18.0.5",
+    "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.4.7",
     "next-transpile-modules": "^9.0.0",
     "postcss": "^8.4.14",

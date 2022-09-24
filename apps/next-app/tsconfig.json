@@ -1,8 +1,10 @@
 {
   "extends": "@monorepo/tsconfig/nextjs.json",
   "compilerOptions": {
-    "baseUrl": "./src",
-    "noEmit": true
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["next-env.d.ts", "src/**/*"],
   "exclude": ["node_modules"]

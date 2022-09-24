@@ -1,7 +1,7 @@
 import React from 'react'
 import type { NextPage } from 'next'
 
-// import { Button } from 'ui/Button'
+import { Button } from '@monorepo/ui/Button'
 import { CoolInterface } from 'server/src/types/CoolInterface'
 import Head from 'next/head'
 
@@ -17,7 +17,7 @@ const Home: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-      {/* <Button /> */}
+      <Button />
       <div className="bg-yellow-200 h-12 w-12" />
     </main>
   </div>

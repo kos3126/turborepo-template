@@ -21,7 +21,7 @@ module.exports = {
         'apps/next-app/',
         'apps/next-next-app/',
         'packages/ui',
-        'packages/eslint-config-custom/',
+        'packages/eslint-config',
         'packages/tsconfig',
       ],
     },
@@ -29,13 +29,9 @@ module.exports = {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
     'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-        project: ['tsconfig.json', 'package/tsconfig.json'],
-      },
       typescript: {
         alwaysTryTypes: true,
-        project: ['tsconfig.json', 'package/tsconfig.json'],
+        project: ['apps/*/tsconfig.json'],
       },
     },
   },

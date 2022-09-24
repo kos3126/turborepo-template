@@ -20,10 +20,10 @@
     "@types/react": "^18.0.21",
     "@types/react-dom": "18.0.5",
     "@monorepo/eslint-config": "*",
+    "@monorepo/tsconfig": "*",
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.2",
-    "tsconfig": "*",
     "typescript": "^4.8.3"
   }
 }

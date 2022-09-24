@@ -11,9 +11,9 @@
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
     "@monorepo/eslint-config": "*",
+    "@monorepo/tsconfig": "*",
     "eslint": "^7.32.0",
     "react": "^18.2.0",
-    "tsconfig": "*",
     "typescript": "^4.5.2"
   }
 }

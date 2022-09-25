@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['@monorepo/eslint-config/nextjs'],
+  extends: ['@monorepo/eslint-config/next'],
 
   // Setting Override
   parserOptions: {

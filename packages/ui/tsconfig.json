@@ -1,5 +1,5 @@
 {
-  "extends": "@monorepo/tsconfig/nextjs.json",
+  "extends": "@monorepo/tsconfig/next.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

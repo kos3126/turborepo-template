@@ -2,8 +2,12 @@
   "extends": "@monorepo/tsconfig/server.json",
   "compilerOptions": {
     "rootDir": ".",
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "dist/**/*"]
+  "include": ["src", "__tests__"],
+  "exclude": ["node_modules", "dist", "coverage", ".turbo"]
 }

@@ -27,9 +27,13 @@ module.exports = {
       },
       typescript: {
         alwaysTryTypes: true,
-        project: '.',
+        project: ['apps/server/tsconfig.json'],
       },
     },
+  },
+  rules: {
+    'sort-imports': 0, // Eslint標準で入っているsort-importsルールはimport/orderと重複するため無効化
+    'import/order': [2, { alphabetize: { order: 'asc' } }], // importがアルファベット順に並んでいない場合にエラー
   },
   overrides: [
     {
@@ -40,5 +44,5 @@ module.exports = {
       extends: ['plugin:jest/recommended'],
     },
   ],
-  ignorePatterns: ['**/*.js', 'node_modules', '.turbo', 'dist'],
+  ignorePatterns: ['**/*.js', 'node_modules', '.turbo', 'dist', 'coverage'],
 }

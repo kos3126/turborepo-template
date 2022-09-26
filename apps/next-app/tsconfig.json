@@ -6,6 +6,6 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["next-env.d.ts", "src/**/*"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "src/**/*", "__tests__/**/*"],
+  "exclude": ["node_modules", ".next", "coverage", ".turbo", ".swc"]
 }

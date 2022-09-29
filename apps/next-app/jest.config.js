@@ -7,18 +7,21 @@ Under the hood, next/jest is automatically configuring Jest for you, including:
 - Ignoring .next from test resolving
 - Loading next.config.js for flags that enable SWC transforms
 */
-const nextJest = require('next/jest')
+const nextJest = require('next/jest');
 
 const createJestConfig = nextJest({
   // Provide the path to your Next.js app to load next.config.js and .env files in your test environment
   dir: './',
-})
+});
 
 // Add any custom config to be passed to Jest
 /** @type {import('jest').Config} */
 const customJestConfig = {
   ...require('../../jest.config'),
-  collectCoverageFrom: ['<rootDir>/src/**/*.{js,ts,jsx,tsx}'],
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.{js,ts,jsx,tsx}',
+    '!<rootDir>/src/types/*.ts',
+  ],
   // if using TypeScript with a baseUrl set to the root directory then you need the below for alias' to work
   moduleDirectories: ['node_modules', '<rootDir>/'],
   moduleFileExtensions: ['js', 'jsx', 'json', 'ts', 'tsx'],
@@ -38,7 +41,7 @@ const customJestConfig = {
   // in jest-environment-jsdom, you can override options given to jsdom such as
   // {html: "<html lang="zh-cmn-Hant"></html>", url: 'https://jestjs.io/', userAgent: "Agent/007"}
   testEnvironment: 'jest-environment-jsdom',
-}
+};
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
-module.exports = createJestConfig(customJestConfig)
+module.exports = createJestConfig(customJestConfig);

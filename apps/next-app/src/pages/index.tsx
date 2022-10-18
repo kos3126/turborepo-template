@@ -32,34 +32,34 @@ const Home: NextPage = () => {
   }
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2 bg-slate-900">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-slate-900 py-2">
       <Head>
         <title>Create Next App with Turborepo</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center text-white">
-        <div className="text-[4rem] font-bold mb-4" data-testid="result">
+      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center text-white">
+        <div className="mb-4 text-[4rem] font-bold" data-testid="result">
           {result}
         </div>
         <input
           type="number"
-          className="my-2 p-2 text-lg w-52 bg-slate-900 border border-slate-500 text-white rounded-lg"
+          className="my-2 w-52 rounded-lg border border-slate-500 bg-slate-900 p-2 text-lg text-white"
           data-testid="num1"
           value={num1}
-          onChange={e => setNum1(e.target.valueAsNumber)}
+          onChange={(e) => setNum1(e.target.valueAsNumber)}
         />
         <input
           type="number"
-          className="my-2 p-2 text-lg w-52 bg-slate-900 border border-slate-500 text-white rounded-lg"
+          className="my-2 w-52 rounded-lg border border-slate-500 bg-slate-900 p-2 text-lg text-white"
           data-testid="num2"
           value={num2}
-          onChange={e => setNum2(e.target.valueAsNumber)}
+          onChange={(e) => setNum2(e.target.valueAsNumber)}
         />
         <button
           type="button"
           onClick={add}
-          className="my-2 p-2 text-lg w-52 border border-black bg-black rounded-lg text-white"
+          className="my-2 w-52 rounded-lg border border-black bg-black p-2 text-lg text-white"
           data-testid="add"
         >
           Add
@@ -67,7 +67,7 @@ const Home: NextPage = () => {
         <button
           type="button"
           onClick={subtract}
-          className="my-2 p-2 text-lg w-52 border border-black bg-black rounded-lg text-white"
+          className="my-2 w-52 rounded-lg border border-black bg-black p-2 text-lg text-white"
           data-testid="subtract"
         >
           Subtract
@@ -75,7 +75,7 @@ const Home: NextPage = () => {
         <button
           type="button"
           onClick={multiply}
-          className="my-2 p-2 text-lg w-52 border border-black bg-black rounded-lg text-white"
+          className="my-2 w-52 rounded-lg border border-black bg-black p-2 text-lg text-white"
           data-testid="multiply"
         >
           Multiply
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
         <button
           type="button"
           onClick={divide}
-          className="my-2 p-2 text-lg w-52 border border-black bg-black rounded-lg text-white"
+          className="my-2 w-52 rounded-lg border border-black bg-black p-2 text-lg text-white"
           data-testid="divide"
         >
           Divide
